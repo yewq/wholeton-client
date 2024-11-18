@@ -1,0 +1,10 @@
+[Unit]
+Description=Wholeton Client
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/wholeton-client/bin/python /opt/wholeton-client/main.py
+
+[Install]
+WantedBy=multi-user.target
